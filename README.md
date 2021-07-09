@@ -1,3 +1,5 @@
+[![Run It](https://gist.githubusercontent.com/adilmirz/556b1e6d5837af3b784a4d6ff97b8b33/raw/ddb3cc7e70f46e99bc135a6d0d32e67fba4ed2d1/Run%2520It.svg)](https://testing-developer.cisco.com/pubhub/site/1818/new/?id=devenv-base-bootstrap&community=true&GITHUB_SOURCE_REPO=https://github.com/jasoncdavis/meraki-settings-to-git-and-differ)
+
 # Meraki Settings Archive & Differ (MSA&D)
 
 The Meraki Settings Archive & Differ project extracts Meraki device settings from the Meraki Dashboard API, stores as JSON files in a local git repo and creates web pages showing differences betweeen scans in colorized form.
@@ -34,10 +36,48 @@ Difference scans can be initiated against latest and previous scan (git HEAD and
 
 ## Installation
 
+### DevNet Cloud Development Environment
+Cloud development environment is preconfigured with required python version this will help in quick start. Also config points to DevNet Meraki readonly sandbox. 
+
+1. Start development environment, by clicking below button
+[![Run It](https://gist.githubusercontent.com/adilmirz/556b1e6d5837af3b784a4d6ff97b8b33/raw/ddb3cc7e70f46e99bc135a6d0d32e67fba4ed2d1/Run%2520It.svg)](https://testing-developer.cisco.com/pubhub/site/1818/new/?id=devenv-base-bootstrap&community=true&GITHUB_SOURCE_REPO=https://github.com/jasoncdavis/meraki-settings-to-git-and-differ)
+
+2. Install pre-requisite python packages by running below command on terminal to listorgs
+``` 
+cd $HOME/src/meraki-settings-to-git-and-differ/
+pip install -r requirements.txt
+```
+2.1  Running below command on terminal to listorgs
+```
+python GetMerakiSettingsIntoGit.py listorgs
+```
+2.1 Estimate & run get setting
+```
+python GetMerakiSettingsIntoGit.py estimatescan 549236
+python GetMerakiSettingsIntoGit.py getsettings 549236
+```
+
+3. Create report
+```
+python CreateMerakiGitDiffWebreport.py listorgs
+```
+
+4. Start web server to serve generate html. Start in terminal tab
+```
+cd /home/developer/html
+python -m http.server  --directory /home/developer/html  8080 
+```
+
+5. Access report on web at URL shown by below commond 
+```
+echo $DEVENV_APP_URL 
+```
+
+### Local, Linux-specific Installations:
+
 It is suggested to run this project in its own Linux Virtual Machine.  Development was done on CentOS Stream 8.3, but releases at or above the 7 train or other Linux variants should be fine.
 Additionally, Apache and Python environments should be installed - CentOS may have provided one in your installation.  Our guidance is to keep the system-supplied version and install the latest Python and use virtual environments (venv) to maintain separation of environments from the core operating system.  Our development was done on Python v3.9.1, but anything above v3.7 should be sufficient.
  
-### Local, Linux-specific Installations:
 
 #### Create a Linux VM with 2 virtual CPUs, 4GB vRAM, 24GB vDisk.
 #### Install Apache
