@@ -48,11 +48,18 @@ Cloud development environment is preconfigured with required python version this
 cd $HOME/src/meraki-settings-to-git-and-differ/
 pip install -r requirements.txt
 ```
-2.1  Running below command on terminal to listorgs
+
+2.1 Set MERAKI API key for always-on sandbox, get key from https://devnetsandbox.cisco.com/RM/Diagram/Index/a9487767-deef-4855-b3e3-880e7f39eadc?diagramType=Topology
+```
+expoort MERAKI_DASHBOARD_API_KEY=<replace key>
+```
+
+2.2  Running below command on terminal to listorgs
 ```
 python GetMerakiSettingsIntoGit.py listorgs
 ```
-2.1 Estimate & run get setting
+
+2.3 Estimate & run get setting
 ```
 python GetMerakiSettingsIntoGit.py estimatescan 549236
 python GetMerakiSettingsIntoGit.py getsettings 549236
