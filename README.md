@@ -1,4 +1,4 @@
-[![Run It](https://gist.githubusercontent.com/adilmirz/556b1e6d5837af3b784a4d6ff97b8b33/raw/ddb3cc7e70f46e99bc135a6d0d32e67fba4ed2d1/Run%2520It.svg)](https://testing-developer.cisco.com/pubhub/site/1818/new/?id=devenv-base-bootstrap&community=true&GITHUB_SOURCE_REPO=https://github.com/jasoncdavis/meraki-settings-to-git-and-differ)
+[![Run It](https://gist.githubusercontent.com/adilmirz/556b1e6d5837af3b784a4d6ff97b8b33/raw/ddb3cc7e70f46e99bc135a6d0d32e67fba4ed2d1/Run%2520It.svg)](https://testing-developer.cisco.com/pubhub/site/1818/new/?id=devenv-base-bootstrap&community=true&GITHUB_SOURCE_REPO=https://github.com/npateriya/meraki-settings-to-git-and-differ)
 
 # Meraki Settings Archive & Differ (MSA&D)
 
@@ -41,7 +41,7 @@ Cloud development environment is preconfigured with required python version this
 
 1. Start development environment, by clicking below button
 
-[![Run It](https://gist.githubusercontent.com/adilmirz/556b1e6d5837af3b784a4d6ff97b8b33/raw/ddb3cc7e70f46e99bc135a6d0d32e67fba4ed2d1/Run%2520It.svg)](https://testing-developer.cisco.com/pubhub/site/1818/new/?id=devenv-base-bootstrap&community=true&GITHUB_SOURCE_REPO=https://github.com/jasoncdavis/meraki-settings-to-git-and-differ)
+[![Run It](https://gist.githubusercontent.com/adilmirz/556b1e6d5837af3b784a4d6ff97b8b33/raw/ddb3cc7e70f46e99bc135a6d0d32e67fba4ed2d1/Run%2520It.svg)](https://testing-developer.cisco.com/pubhub/site/1818/new/?id=devenv-base-bootstrap&community=true&GITHUB_SOURCE_REPO=https://github.com/npateriya/meraki-settings-to-git-and-differ)
 
 2. Install pre-requisite python packages by running below command on terminal to listorgs
 ``` 
