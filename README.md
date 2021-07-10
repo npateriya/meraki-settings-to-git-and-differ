@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 2.1 Set MERAKI API key for always-on sandbox, get key from https://devnetsandbox.cisco.com/RM/Diagram/Index/a9487767-deef-4855-b3e3-880e7f39eadc?diagramType=Topology
 ```
-expoort MERAKI_DASHBOARD_API_KEY=<replace key>
+export MERAKI_DASHBOARD_API_KEY=<replace key>
 ```
 
 2.2  Running below command on terminal to listorgs
