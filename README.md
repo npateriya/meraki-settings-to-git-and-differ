@@ -7,7 +7,7 @@ The Meraki Settings Archive & Differ project extracts Meraki device settings fro
 The business driver for developing this was for Cisco customers that may have sophisticated IT Service Management requirements and also use cloud-managed Meraki equipment.  The solution archives the settings into a local git repo allowing for archive and difference analysis.  This solution is the foundation for possible follow-on functionality, such as settings scans for compliance.  As the settings are stored in feature-specific JSON files, it is easy to write JSON Path Queries to check for compliance to your corporate standards or any other compliance framework (eg. HIPAA, PCI/DSS, Basel II/III, FIPS, etc).  Note, the code in the current project does not provide those rules or functionality.  It is expected that Cisco Customer Experience (CX) will be releasing a service that performs the compliance specific function.
 
 * Technology stack: Python, REST APIs, Meraki Dashboard API, HTML/CSS
-<kbd><img src="images/UC2Architecture.png" alt="UC2 Architecture" width="910" height="512"/></kbd>
+<kbd><img src="images/UC2Architecture.png?raw=true" alt="UC2 Architecture" width="910" height="512"/></kbd>
 Figure 1 - Meraki Settings Archive & Differ architecture/framework
 
 
